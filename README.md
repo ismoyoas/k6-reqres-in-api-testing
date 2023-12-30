@@ -204,9 +204,9 @@ Report
 ------------
 
 Based on the performance testing report, you can see the information in the image below, particularly in the 'Request Metrics' tab. The colored data in the request metrics are the actual results of what we tested.
-![report 1](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211430.png)
+![report 1](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_1.png)
 In the 'Other Stats' tab, there is data on checks, iterations, virtual users, requests, data received, and data sent. 
-![report 2](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211438.png)
+![report 2](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_2.png)
 In the 'Checks & Group' tab, you can find information about the functional APIs that we tested.
-![report 3](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211443.png)
+![report 3](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_3.png)
 The total requests in green represent the number of requests that passed. Failed requests and checks may be highlighted in red if there are requests that failed, typically due to request timeouts. Breached thresholds may also be highlighted in red, representing the number of failed thresholds. Green-colored data in the request metrics indicates the actual results of what we tested and passed, while red-colored data in the request metrics indicates the actual results of what we tested and failed.
