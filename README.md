@@ -205,11 +205,11 @@ Report
 
 Based on the performance testing report, you can see the information in the image below, particularly in the 'Request Metrics' tab. The colored data in the request metrics are the actual results of what we tested.
 
-![report 1](https://raw.githubusercontent.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211430.png)
+![report 1](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211430.png)
 
-![report 2](https://raw.githubusercontent.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211438.png)
+![report 2](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211438.png)
 
-![report 3](https://raw.githubusercontent.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211443.png)
+![report 3](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/img/img_211443.png)
 
 In the 'Other Stats' tab, there is data on checks, iterations, virtual users, requests, data received, and data sent. In the 'Checks & Group' tab, you can find information about the functional APIs that we tested. The total requests in green represent the number of requests that passed.
 
