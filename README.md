@@ -9,6 +9,7 @@ Table of Contents
 * [Scenario](#scenario)
     * [Integration Testing](#integrationtesting)
     * [Performance Testing](#performancetesting)
+* [Report](#report)
 
 <a name="prerequisite"></a>
 Prerequisite
@@ -154,7 +155,7 @@ The `check` module is utilized for validating the tests. This module takes the r
 * The response body contains keys that should be present in the response body, and
 * Some values from the response data are present or match the payload data.
 
-Similar to the Create scenario script, for writing the Update scenario script, it also refers to the Update [response](#scenario-update) from Postman, as shown in the attached script. The script code is then saved with the name [`integration_test.js`](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/integration_test.js), and the script code is tested by running the following code in the terminal or command prompt:
+Similar to the Create scenario script, for writing the Update scenario script, it also refers to the Update [response](#scenario-update) from Postman, as shown in the attached script. The script code is then saved with the name [`integration_test.js`](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/test/integration_test.js), and the script code is tested by running the following code in the terminal or command prompt:
 ```SHELL
 $ k6 run integration_test.js
 ```
@@ -176,7 +177,7 @@ export let options = {
 };
 ```
 
-Next, the [test results](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/performance_test_report.html) are saved in HTML format with a visually intuitive representation for easy understanding and sharing. This feature requires additional libraries and script code at the bottom of the code script.
+Next, the [test results](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/report/performance_test_report.html) are saved in HTML format with a visually intuitive representation for easy understanding and sharing. This feature requires additional libraries and script code at the bottom of the code script.
 ```JavaScript
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 import { textSummary } from "https://jslib.k6.io/k6-summary/0.0.1/index.js";
@@ -193,7 +194,21 @@ export function handleSummary(data){
 };
 ```
 
-Next, the script code is saved with the name [`performance_test.js`](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/performance_test.js), and the script code is tested by running the following code in the terminal or command prompt:
+Next, the script code is saved with the name [`performance_test.js`](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/test/performance_test.js), and the script code is tested by running the following code in the terminal or command prompt:
 ```SHELL
 $ k6 run performance_test.js
 ```
+
+<a name="report"></a>
+Report
+------------
+
+Based on the performance testing report, you can see the information in the image below, particularly in the 'Request Metrics' tab. The colored data in the request metrics are the actual results of what we tested.
+
+![report 1](https://raw.githubusercontent.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/report/img_211430.png)
+![report 2](https://raw.githubusercontent.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/report/img_211438.png)
+![report 3](https://raw.githubusercontent.com/ismoyoas/k6-reqres-in-api-testing/blob/master/assets/report/img_211443.png)
+
+In the 'Other Stats' tab, there is data on checks, iterations, virtual users, requests, data received, and data sent. In the 'Checks & Group' tab, you can find information about the functional APIs that we tested. The total requests in green represent the number of requests that passed.
+
+Failed requests and checks may be highlighted in red if there are requests that failed, typically due to request timeouts. Breached thresholds may also be highlighted in red, representing the number of failed thresholds. Green-colored data in the request metrics indicates the actual results of what we tested and passed, while red-colored data in the request metrics indicates the actual results of what we tested and failed.
