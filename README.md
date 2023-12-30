@@ -176,7 +176,7 @@ export let options = {
 };
 ```
 
-Next, the [test results](hhttps://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/integration_test.js) are saved in HTML format with a visually intuitive representation for easy understanding and sharing. This feature requires additional libraries and script code at the bottom of the code script.
+Next, the [test results](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/performance_test_report.html) are saved in HTML format with a visually intuitive representation for easy understanding and sharing. This feature requires additional libraries and script code at the bottom of the code script.
 ```JavaScript
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 import { textSummary } from "https://jslib.k6.io/k6-summary/0.0.1/index.js";
@@ -193,7 +193,7 @@ export function handleSummary(data){
 };
 ```
 
-Next, the script code is saved with the name [`performance_test.js`](hhttps://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/performance_test.js), and the script code is tested by running the following code in the terminal or command prompt:
+Next, the script code is saved with the name [`performance_test.js`](https://github.com/ismoyoas/k6-reqres-in-api-testing/blob/master/performance_test.js), and the script code is tested by running the following code in the terminal or command prompt:
 ```SHELL
 $ k6 run performance_test.js
 ```
