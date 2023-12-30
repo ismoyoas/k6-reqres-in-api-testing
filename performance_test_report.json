@@ -1,0 +1,329 @@
+{
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [
+      {
+        "name": "Reqres.in POST API",
+        "path": "::Reqres.in POST API",
+        "id": "17062a8b6685cfaf7f22b3e85ad9aa00",
+        "groups": [],
+        "checks": [
+            {
+              "path": "::Reqres.in POST API::response status code is 201 (CREATED)",
+              "id": "d1dff87f65ca93bff468bf0373209090",
+              "passes": 3500,
+              "fails": 0,
+              "name": "response status code is 201 (CREATED)"
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Reqres.in POST API::response body not empty",
+              "id": "36d55633b1610fbf3fdd46726fd110c7",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "passes": 3500,
+              "fails": 0,
+              "name": "response body has 'name' property",
+              "path": "::Reqres.in POST API::response body has 'name' property",
+              "id": "4954a0c17e62d0ffa21f451a26f1093b"
+            },
+            {
+              "passes": 3500,
+              "fails": 0,
+              "name": "response body has 'id' property",
+              "path": "::Reqres.in POST API::response body has 'id' property",
+              "id": "3c53fc787f84720093d2ded0788c3dd8"
+            },
+            {
+              "name": "response body has 'job' property",
+              "path": "::Reqres.in POST API::response body has 'job' property",
+              "id": "85a99c79ce15d504a207f4c48cce2b8a",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "name": "'name' value in response body equal to request 'name'",
+              "path": "::Reqres.in POST API::'name' value in response body equal to request 'name'",
+              "id": "fa3be5dfaaf576e23716ece335795924",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "name": "'job' value in response body equal to request 'job'",
+              "path": "::Reqres.in POST API::'job' value in response body equal to request 'job'",
+              "id": "849c461ca857d4ecdd2a97da7df0b703",
+              "passes": 3500,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "id": "5c2c247759cc8f01dff9e3dadf0ceba3",
+        "groups": [],
+        "checks": [
+            {
+              "name": "response status code is 200 (OK)",
+              "path": "::Reqres.in PUT API::response status code is 200 (OK)",
+              "id": "9622e5ebb7259b4df27a6e8c06373deb",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Reqres.in PUT API::response body not empty",
+              "id": "7fcf5ecc3f954a67794fdfebb48e5462",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "name": "response body has 'name' property",
+              "path": "::Reqres.in PUT API::response body has 'name' property",
+              "id": "b78c2c750a7ab3daffe063a261bf0a4f",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "id": "104396e56aea9c88b08f16180881c79b",
+              "passes": 3500,
+              "fails": 0,
+              "name": "response body has 'job' property",
+              "path": "::Reqres.in PUT API::response body has 'job' property"
+            },
+            {
+              "path": "::Reqres.in PUT API::'name' value in response body equal to request 'name'",
+              "id": "ad6151ebfbdf2d05a570c5a490cf3355",
+              "passes": 3500,
+              "fails": 0,
+              "name": "'name' value in response body equal to request 'name'"
+            },
+            {
+              "passes": 3500,
+              "fails": 0,
+              "name": "'job' value in response body not equal to previous 'job' value",
+              "path": "::Reqres.in PUT API::'job' value in response body not equal to previous 'job' value",
+              "id": "42ca52ce8c130e4e30ec1f222237baa7"
+            }
+          ],
+        "name": "Reqres.in PUT API",
+        "path": "::Reqres.in PUT API"
+      }
+    ],
+    "checks": []
+  },
+  "options": {
+    "noColor": false,
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)"
+    ],
+    "summaryTimeUnit": ""
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 21992.2945
+  },
+  "metrics": {
+    "vus": {
+      "values": {
+        "value": 1,
+        "min": 1,
+        "max": 1000
+      },
+      "type": "gauge",
+      "contains": "default"
+    },
+    "http_req_blocked": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 585.1290000000007,
+        "p(95)": 1377.9132199999985,
+        "avg": 145.0181563000001,
+        "min": 0,
+        "med": 0,
+        "max": 5350.7483
+      }
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 7000,
+        "rate": 318.29330041028686
+      }
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 127.13729322857141,
+        "min": 0,
+        "med": 0,
+        "max": 4923.5361,
+        "p(90)": 421.50870000000026,
+        "p(95)": 1261.683684999999
+      }
+    },
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.2069483142857147,
+        "min": 0,
+        "med": 0,
+        "max": 5.5259,
+        "p(90)": 0.548,
+        "p(95)": 0.6943199999999997
+      }
+    },
+    "iterations": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "rate": 159.14665020514343,
+        "count": 3500
+      }
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 4.900149999999976,
+        "avg": 1.5126005428571412,
+        "min": 0,
+        "med": 0.1624,
+        "max": 658.1545,
+        "p(90)": 1.9816300000000004
+      }
+    },
+    "data_received": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "rate": 318905.2420155614,
+        "count": 7013458
+      }
+    },
+    "iteration_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 4243.12599,
+        "p(95)": 4425.673479999998,
+        "avg": 3198.3632095142793,
+        "min": 2788.6566,
+        "med": 2873.64435,
+        "max": 18544.6272
+      }
+    },
+    "vus_max": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "min": 1000,
+        "max": 1000,
+        "value": 1000
+      }
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 7000
+      }
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 17.632255071428567,
+        "min": 0,
+        "med": 0,
+        "max": 1210.664,
+        "p(90)": 99.88414000000003,
+        "p(95)": 113.6155
+      }
+    },
+    "http_req_waiting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 424.27160000000003,
+        "max": 15672.3823,
+        "p(90)": 476.30226000000005,
+        "p(95)": 595.1065849999994,
+        "avg": 447.989244842857,
+        "min": 381.5428
+      }
+    },
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 449.7087936999988,
+        "min": 386.6,
+        "med": 425.34875,
+        "max": 15672.9611,
+        "p(90)": 480.1584800000001,
+        "p(95)": 601.4986849999996
+      }
+    },
+    "data_sent": {
+      "values": {
+        "count": 1274500,
+        "rate": 57952.11591041581
+      },
+      "type": "counter",
+      "contains": "data"
+    },
+    "checks": {
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 45500,
+        "fails": 0
+      },
+      "type": "rate"
+    },
+    "group_duration": {
+      "contains": "time",
+      "values": {
+        "max": 16096.7469,
+        "p(90)": 1235.83606,
+        "p(95)": 1814.9483049999988,
+        "avg": 595.0753604285728,
+        "min": 386.6,
+        "med": 426.81370000000004
+      },
+      "type": "trend"
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 386.6,
+        "med": 425.34875,
+        "max": 15672.9611,
+        "p(90)": 480.1584800000001,
+        "p(95)": 601.4986849999996,
+        "avg": 449.7087936999988
+      },
+      "thresholds": {
+        "p(95)<2000": {
+          "ok": true
+        }
+      }
+    }
+  }
+}
